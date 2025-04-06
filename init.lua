@@ -1,3 +1,5 @@
+local other = require("other")
+
 local dir = File {
   state = "Present",
   file_type = "Directory",
@@ -13,3 +15,6 @@ for i = 1, 100 do
   }
 end
 
+Person {
+  name = other.name
+}
