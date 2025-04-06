@@ -1,4 +1,4 @@
-local other = require("other")
+print(LUA_PATH)
 
 local dir = File {
   state = "Present",
@@ -16,5 +16,5 @@ for i = 1, 100 do
 end
 
 Person {
-  name = other.name
+  name = "me"
 }
