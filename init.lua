@@ -1,0 +1,15 @@
+local dir = File {
+  state = "Present",
+  file_type = "Directory",
+  path = "/tmp/test-from-caravel2",
+}
+
+for i = 1, 100 do
+  File {
+    state = "Present",
+    file_type = "File",
+    path = dir.path .. "/file" .. i .. ".txt",
+    content = "hi there new " .. i .. "\n",
+  }
+end
+
